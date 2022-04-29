@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reflix</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="logo icon" href="images/images/R logo.png" />
+  </head>
+  <body>
+    <div class="nav" id="nav">
+      <img
+        src="images/images/reflix-logo.png"
+        alt=""
+        class="nav_logo"
+      />
+      <img
+        src="images/images/Phineas avatar.jpg"
+        alt=""
+        class="nav_avatar"
+      />
+    </div>
+    <!-- header -->
+    <div class="banner">
+      <div class="banner_contents">
+        <h1 class="banner_title">Money Heist</h1>
+        <div class="banner_buttons">
+          <button
+            id="myButton"
+            class="banner_button"
+            onclick="location.href='https://www.youtube.com/watch?v=_InqQJRqGW4'"
+          >
+            Watch Trailer
+          </button>
+          <div id="myMainModal" class="modal">
+            <span class="close0">&times;</span>
+
+            <!-- add card hereeeee-->
+            <div class="container">
+              <div class="card">
+                <div class="card-header">
+                  <iframe
+                    src="https://www.youtube.com/embed/htqXL94Rza4"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen="allowfullscreen"
+                    width="640"
+                    height="480"
+                    frameborder="0"
+                  >
+                  </iframe>
+                </div>
+                <div class="card-body">
+                  <div class="flex">
+                    <span class="tag tag-purple">Thriller </span>
+                    <span class="tag tag-purple">Drama </span>
+                  </div>
+                  <h2 class="movie-title">Money Heist</h2>
+                  <small class="running-time">2017 ‧ 5 seasons </small>
+                  <br />
+
+                  <p>
+                    Set in Madrid, a mysterious man known as the "Professor"
+                    recruits a group of eight people, who choose city names as
+                    their aliases, to carry out an ambitious plan that involves
+                    entering the Royal Mint of Spain, and escaping with €984
+                    million...
+                    <br />
+                    <br />
+                    <b>Director: Álex Pina</b>
+                    <br />
+                    <b> Stars: Úrsula Corberó Álvaro Morte </b>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            // Get the modal
+            var modal0 = document.getElementById("myMainModal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img0 = document.getElementById("myButton");
+            img0.onclick = function () {
+              modal0.style.display = "block";
+            };
+
+            // Get the <span> element that closes the modal
+            var span0 = document.getElementsByClassName("close0")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span0.onclick = function () {
+              modal0.style.display = "none";
+            };
+          </script>
+          <button class="banner_button">Play</button>
+          <button class="banner_button">My List</button>
+        </div>
+        <div class="banner_description">
+          <h5>
+            Set in Madrid, a mysterious man known as the "Professor" recruits a
+            group of eight people, who choose city names as their aliases, to
+            carry out an ambitious plan that involves entering the Royal Mint of
+            Spain, and escaping with €984 million...
+          </h5>
+        </div>
+      </div>
+      <div class="banner_FadeBottom"></div>
+    </div>
+
+    <div class="row">
+      <h2>Originals</h2>
+      <div class="row_posters">
+        <img
+          id="myImg"
+          src="images/images/large-movie2.jpg"
+          alt=""
+          class="row_poster row_posterLarge"
+        />
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <!-- <img class="modal-content" id="img01"> -->
+          <!-- add card hereeeee-->
+          <div class="container">
+            <div class="card">
+              <div class="card-header">
+                <!--           <img src="https://images.cruisecritic.com/image/18740535/10-best-cruise-destinations-for-hot-air-balloon-rides_600x400_21.jpg" alt="" /> -->
+                <iframe
+                  src="https://www.youtube.com/embed/X4bF_quwNtw"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen="allowfullscreen"
+                  width="640"
+                  height="480"
+                  frameborder="0"
+                >
+                </iframe>
+              </div>
+              <div class="card-body">
+                <div class="flex">
+                  <span class="tag tag-purple">Crime</span>
+                  <span class="tag tag-purple">Drama</span>
+                  <span class="tag tag-purple">Fantasy</span>
+                </div>
+                <h2 class="movie-title">Lucifer</h2>
+                <small class="running-time">2016 ‧ 6 seasons</small>
+                <br />
+
+                <p>
+                  Lucifer Morningstar has decided he's had enough of being the
+                  dutiful servant in Hell and decides to spend some time on
+                  Earth to better understand humanity. He settles in Los Angeles
+                  - the City of Angels.
+                  <br />
+                  <br />
+                  <b>Creator: Tom Kapinos</b>
+                  <br />
+                  <b>Stars: Tom Ellis Lauren GermanKevin Alejandro</b>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="caption"></div>
+        </div>
+
+        <script>
+          // Get the modal
+          var modal = document.getElementById("myModal");
+
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+          var img = document.getElementById("myImg");
+          var modalImg = document.getElementById("img01");
+          var captionText = document.getElementById("caption");
+          img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+          };
+
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close")[0];
+
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function () {
+            modal.style.display = "none";
+          };
+        </script>
+        <img
+          src="images/images/large-movie1.jpg"
+          alt=""
+          class="row_poster row_posterLarge"
+        />
+        <img
+          src="images/images/large-movie3.jpg"
+          alt=""
+          class="row_poster row_posterLarge"
+        />
+        <img
+          src="images/images/large-movie4.jpg"
+          alt=""
+          class="row_poster row_posterLarge"
+        />
+        <img
+          src="images/images/large-movie5.jpg"
+          alt=""
+          class="row_poster row_posterLarge"
+        />
+        <img
+          src="images/images/large-movie6.jpg"
+          alt=""
+          class="row_poster row_posterLarge"
+        />
+        <img
+          src="images/images/large-movie7.jpg"
+          alt=""
+          class="row_poster row_posterLarge"
+        />
+        <img
+          src="images/images/large-movie8.jpg"
+          alt=""
+          class="row_poster row_posterLarge"
+        />
+      </div>
+    </div>
+    <div class="row">
+      <h2>Trending Now</h2>
+      <div class="row_posters">
+        <img
+          src="images/images/BmiNWXBa-gangsofwasseypur.jpg.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/YJHD Poster.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Insidious.png"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Pyaar ka Punchnama.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <!-- Clickable Part -->
+        <img
+          id="myImg2"
+          src="images/images/Spiderman-poster.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <!-- The Modal -->
+        <div id="myModal2" class="modal">
+          <span class="close2">&times;</span>
+
+          <!-- add card hereeeee-->
+          <div class="container">
+            <div class="card">
+              <div class="card-header">
+                <iframe
+                  src="https://www.youtube.com/embed/JfVOs4VSpmA"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen="allowfullscreen"
+                  width="640"
+                  height="480"
+                  frameborder="0"
+                >
+                </iframe>
+              </div>
+              <div class="card-body">
+                <div class="flex">
+                  <span class="tag tag-purple">Adventure</span>
+                  <span class="tag tag-purple">Action </span>
+                  <span class="tag tag-purple">Fantasy</span>
+                </div>
+                <h2 class="movie-title">Spider-Man: No Way Home</h2>
+                <small class="running-time">2021 ‧ 2h 28m</small>
+                <br />
+
+                <p>
+                  With Spider-Man's identity now revealed, Peter asks Doctor
+                  Strange for help. When a spell goes wrong, dangerous foes from
+                  other worlds start to appear, forcing Peter to discover what
+                  it truly means to be Spider-Man.
+                  <br />
+                  <br />
+                  <b>Director: Jon Watts</b>
+                  <br />
+                  <b> Stars: Tom Holland Zendaya Benedict Cumberbatch</b>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="caption"></div>
+        </div>
+
+        <script>
+          // Get the modal
+          var modal2 = document.getElementById("myModal2");
+
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+          var img2 = document.getElementById("myImg2");
+          img2.onclick = function () {
+            modal2.style.display = "block";
+          };
+
+          // Get the <span> element that closes the modal
+          var span2 = document.getElementsByClassName("close2")[0];
+
+          // When the user clicks on <span> (x), close the modal
+          span2.onclick = function () {
+            modal2.style.display = "none";
+          };
+        </script>
+        <img
+          src="images/images/DDLJ-2.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/The Conjuring.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Bahubali.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/BmiNWXBa-gangsofwasseypur.jpg.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/YJHD Poster.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Insidious.png"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Pyaar ka Punchnama.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Spiderman-poster.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/DDLJ-2.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/The Conjuring.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Bahubali.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+      </div>
+    </div>
+    <div class="row">
+      <h2>Top Rated</h2>
+      <div class="row_posters">
+        <img
+          src="images/images/small-movie2.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/The Conjuring.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/YJHD Poster.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Jaane Tu Ya Jaane Na.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/BmiNWXBa-gangsofwasseypur.jpg.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Annabelle.webp"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Welcome Poster.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Insidious.png"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/small-movie2.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/The Conjuring.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <!-- Clickable Link -->
+        <img
+          id="myImg3"
+          src="images/images/YJHD Poster.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <!-- The Modal -->
+        <div id="myModal3" class="modal">
+          <span class="close3">&times;</span>
+          <!-- add card here-->
+          <div class="container">
+            <div class="card">
+              <div class="card-header">
+                <iframe
+                  src="https://www.youtube.com/embed/Rbp2XUSeUNE"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen="allowfullscreen"
+                  width="640"
+                  height="480"
+                  frameborder="0"
+                >
+                </iframe>
+              </div>
+              <div class="card-body">
+                <div class="flex">
+                  <span class="tag tag-purple">Romance </span>
+                  <span class="tag tag-purple">Drama </span>
+                  <span class="tag tag-purple">Musical</span>
+                </div>
+                <h2 class="movie-title">Yeh Jawaani Hai Deewani</h2>
+                <small class="running-time">2013 ‧ 2h 40m</small>
+                <br />
+
+                <p>
+                  Kabir and Naina bond during a trekking trip. Before Naina can
+                  express herself, Kabir leaves India to pursue his career. They
+                  meet again years later, but he still cherishes his dreams more
+                  than bonds.
+                  <br />
+                  <br />
+                  <b>Director: Ayan Mukherjee</b>
+                  <br />
+                  <b> Stars: Ranbir Kapoor Deepika Padukone</b>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="caption"></div>
+        </div>
+
+        <script>
+          // Get the modal
+          var modal3 = document.getElementById("myModal3");
+
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+          var img3 = document.getElementById("myImg3");
+          img3.onclick = function () {
+            modal3.style.display = "block";
+          };
+
+          // Get the <span> element that closes the modal
+          var span3 = document.getElementsByClassName("close3")[0];
+
+          // When the user clicks on <span> (x), close the modal
+          span3.onclick = function () {
+            modal3.style.display = "none";
+          };
+        </script>
+
+        <img
+          src="images/images/Jaane Tu Ya Jaane Na.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/BmiNWXBa-gangsofwasseypur.jpg.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Annabelle.webp"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Welcome Poster.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Insidious.png"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+      </div>
+    </div>
+    <div class="row">
+      <h2>Action Movies</h2>
+      <div class="row_posters">
+        <img
+          id="myImg4"
+          src="images/images/Top Gun-Poster.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <!-- The Modal -->
+        <div id="myModal4" class="modal">
+          <span class="close4">&times;</span>
+
+          <!-- add card here-->
+          <div class="container">
+            <div class="card">
+              <div class="card-header">
+                <iframe
+                  src="https://www.youtube.com/embed/xa_z57UatDY"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen="allowfullscreen"
+                  width="640"
+                  height="480"
+                  frameborder="0"
+                >
+                </iframe>
+              </div>
+              <div class="card-body">
+                <div class="flex">
+                  <span class="tag tag-purple">Action </span>
+                  <span class="tag tag-purple">Drama </span>
+                </div>
+                <h2 class="movie-title">Top Gun</h2>
+                <small class="running-time">1986 ‧ 1h 50m</small>
+                <br />
+
+                <p>
+                  As students at the United States Navy's elite fighter weapons
+                  school compete to be best in the class, one daring young pilot
+                  learns a few things from a civilian instructor that are not
+                  taught in the classroom.
+                  <br />
+                  <br />
+                  <b>Director: Tony Scott </b>
+                  <br />
+                  <b> Stars: Tom Cruise Kelly McGillis</b>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="caption"></div>
+        </div>
+
+        <script>
+          // Get the modal
+          var modal4 = document.getElementById("myModal4");
+
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+          var img4 = document.getElementById("myImg4");
+          img4.onclick = function () {
+            modal4.style.display = "block";
+          };
+
+          // Get the <span> element that closes the modal
+          var span4 = document.getElementsByClassName("close4")[0];
+
+          // When the user clicks on <span> (x), close the modal
+          span4.onclick = function () {
+            modal4.style.display = "none";
+          };
+        </script>
+
+        <img
+          src="images/images/gladiator.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/mardaani-2-poster-2.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/The Adam Project.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/BmiNWXBa-gangsofwasseypur.jpg.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Bahubali.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Raees.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Spiderman-poster.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Top Gun-Poster.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/gladiator.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/mardaani-2-poster-2.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/The Adam Project.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/BmiNWXBa-gangsofwasseypur.jpg.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Bahubali.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Raees.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Spiderman-poster.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+      </div>
+    </div>
+    <div class="row">
+      <h2>Comedy Movies</h2>
+      <div class="row_posters">
+        <img
+          src="images/images/YJHD Poster.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/De Dana Dan.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/The Hangover.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <!-- Clickable Link -->
+        <img
+          id="myImg5"
+          src="images/images/e9745530c75e11eaa42c8f723f500b79_1595503614026_l_medium.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <!-- The Modal -->
+        <div id="myModal5" class="modal">
+          <span class="close5">&times;</span>
+
+          <!-- add card here-->
+          <div class="container">
+            <div class="card">
+              <div class="card-header">
+                <iframe
+                  src="https://www.youtube.com/embed/o4W2iBB8iwA"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen="allowfullscreen"
+                  width="640"
+                  height="480"
+                  frameborder="0"
+                >
+                </iframe>
+              </div>
+              <div class="card-body">
+                <div class="flex">
+                  <span class="tag tag-purple">Comedy </span>
+                  <span class="tag tag-purple">Crime </span>
+                </div>
+                <h2 class="movie-title">Phir Hera Pheri</h2>
+                <small class="running-time">2006 ‧ 2h 33m</small>
+                <br />
+
+                <p>
+                  Baburao, Raju and Shyam are living happily after having risen
+                  from rags to riches. Still, money brings the joy of riches and
+                  with it the greed to make more money. And so, with a don as an
+                  unknowing investor, Raju initiates a new game.
+                  <br />
+                  <br />
+                  <b>Director: Neeraj Vora</b>
+                  <br />
+                  <b> Stars: Akshay Kumar Suniel Shetty Paresh Rawal</b>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="caption"></div>
+        </div>
+
+        <script>
+          // Get the modal
+          var modal5 = document.getElementById("myModal5");
+
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+          var img5 = document.getElementById("myImg5");
+          img5.onclick = function () {
+            modal5.style.display = "block";
+          };
+
+          // Get the <span> element that closes the modal
+          var span5 = document.getElementsByClassName("close5")[0];
+
+          // When the user clicks on <span> (x), close the modal
+          span5.onclick = function () {
+            modal5.style.display = "none";
+          };
+        </script>
+
+        <img
+          src="images/images/Dil Chahta Hai.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Pyaar ka Punchnama.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Welcome Poster.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Namastey London.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/YJHD Poster.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/De Dana Dan.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/The Hangover.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/e9745530c75e11eaa42c8f723f500b79_1595503614026_l_medium.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Dil Chahta Hai.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Pyaar ka Punchnama.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Welcome Poster.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Namastey London.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+      </div>
+    </div>
+    <div class="row">
+      <h2>Horror Movies</h2>
+      <div class="row_posters">
+        <!-- clickable link -->
+        <img
+          id="myImg6"
+          src="images/images/The Conjuring.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <!-- The Modal -->
+        <div id="myModal6" class="modal">
+          <span class="close6">&times;</span>
+
+          <!-- add card here-->
+          <div class="container">
+            <div class="card">
+              <div class="card-header">
+                <iframe
+                  src="https://www.youtube.com/embed/k10ETZ41q5o"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen="allowfullscreen"
+                  width="640"
+                  height="480"
+                  frameborder="0"
+                >
+                </iframe>
+              </div>
+              <div class="card-body">
+                <div class="flex">
+                  <span class="tag tag-purple">Horror </span>
+                  <span class="tag tag-purple">Mystery </span>
+                </div>
+                <h2 class="movie-title">The Conjuring</h2>
+                <small class="running-time">2013 ‧ 1h 52m</small>
+                <br />
+
+                <p>
+                  Paranormal investigators Ed and Lorraine Warren work to help a
+                  family terrorized by a dark presence in their farmhouse.
+                  <br />
+                  <br />
+                  <b>Director: James Wan</b>
+                  <br />
+                  <b> Stars: Vera Farmiga Patrick Wilson</b>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="caption"></div>
+        </div>
+
+        <script>
+          // Get the modal
+          var modal6 = document.getElementById("myModal6");
+
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+          var img6 = document.getElementById("myImg6");
+          img6.onclick = function () {
+            modal6.style.display = "block";
+          };
+
+          // Get the <span> element that closes the modal
+          var span6 = document.getElementsByClassName("close6")[0];
+
+          // When the user clicks on <span> (x), close the modal
+          span6.onclick = function () {
+            modal6.style.display = "none";
+          };
+        </script>
+
+        <img
+          src="images/images/The Nun.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Annabelle.webp"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Stree-Poster.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Insidious.png"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Don't Breathe.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Ghost Stories.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Army of Dead.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/The Conjuring.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/The Nun.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Annabelle.webp"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Stree-Poster.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Insidious.png"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Don't Breathe.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Ghost Stories.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Army of Dead.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+      </div>
+    </div>
+    <div class="row">
+      <h2>Romance Movies</h2>
+      <div class="row_posters">
+        <!-- Clickable Link -->
+        <img
+          id="myImg7"
+          src="images/images/DDLJ-2.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <!-- The Modal -->
+        <div id="myModal7" class="modal">
+          <span class="close7">&times;</span>
+
+          <!-- add card here-->
+          <div class="container">
+            <div class="card">
+              <div class="card-header">
+                <iframe
+                  src="https://www.youtube.com/embed/cmax1C1p660"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen="allowfullscreen"
+                  width="640"
+                  height="480"
+                  frameborder="0"
+                >
+                </iframe>
+              </div>
+              <div class="card-body">
+                <div class="flex">
+                  <span class="tag tag-purple">Romance </span>
+                  <span class="tag tag-purple">Drama </span>
+                </div>
+                <h2 class="movie-title">Dilwale Dulhaniya Le Jayenge</h2>
+                <small class="running-time">1995 ‧ 3h 09m</small>
+                <br />
+
+                <p>
+                  When Raj meets Simran in Europe, it isn't love at first sight
+                  but when Simran moves to India for an arranged marriage, love
+                  makes its presence felt.
+                  <br />
+                  <br />
+                  <b>Director: Aditya Chopra</b>
+                  <br />
+                  <b> Stars: Shahrukh Khan Kajol</b>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="caption"></div>
+        </div>
+
+        <script>
+          // Get the modal
+          var modal7 = document.getElementById("myModal7");
+
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+          var img7 = document.getElementById("myImg7");
+          img7.onclick = function () {
+            modal7.style.display = "block";
+          };
+
+          // Get the <span> element that closes the modal
+          var span7 = document.getElementsByClassName("close7")[0];
+
+          // When the user clicks on <span> (x), close the modal
+          span7.onclick = function () {
+            modal7.style.display = "none";
+          };
+        </script>
+
+        <img
+          src="images/images/Hum Tum Poster.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/YJHD Poster.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Jaane Tu Ya Jaane Na.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/The Proposal.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/50 first dates.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Kal Ho Na HO.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/small-movie8.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/DDLJ-2.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Hum Tum Poster.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/YJHD Poster.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Jaane Tu Ya Jaane Na.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/The Proposal.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/50 first dates.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Kal Ho Na HO.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/small-movie8.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+      </div>
+    </div>
+    <div class="row">
+      <h2>Documentaries</h2>
+      <div class="row_posters">
+        <img
+          src="images/images/Tony Robbins.png"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/JFK.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Schitt's Creek.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Pele.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Downfall.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/The Great Hack.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <!-- Clickable Link -->
+        <img
+          id="myImg8"
+          src="images/images/The Big Short.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <!-- The Modal -->
+        <div id="myModal8" class="modal">
+          <span class="close8">&times;</span>
+
+          <!-- add card here-->
+          <div class="container">
+            <div class="card">
+              <div class="card-header">
+                <iframe
+                  src="https://www.youtube.com/embed/vgqG3ITMv1Q "
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen="allowfullscreen"
+                  width="640"
+                  height="480"
+                  frameborder="0"
+                >
+                </iframe>
+              </div>
+              <div class="card-body">
+                <div class="flex">
+                  <span class="tag tag-purple">Documentary </span>
+                  <span class="tag tag-purple">Comedy </span>
+                </div>
+                <h2 class="movie-title">The Big Short</h2>
+                <small class="running-time">2015 ‧ 2h 10m</small>
+                <br />
+
+                <p>
+                  In 2006-2007 a group of investors bet against the US mortgage
+                  market. In their research, they discover how flawed and
+                  corrupt the market is.
+                  <br />
+                  <br />
+                  <b>Director: Adam McKay</b>
+                  <br />
+                  <b>
+                    Stars: Christian Bale Steve Carell Ryan Gosling Brad Pitt
+                  </b>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="caption"></div>
+        </div>
+
+        <script>
+          // Get the modal
+          var modal8 = document.getElementById("myModal8");
+
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+          var img8 = document.getElementById("myImg8");
+          img8.onclick = function () {
+            modal8.style.display = "block";
+          };
+
+          // Get the <span> element that closes the modal
+          var span8 = document.getElementsByClassName("close8")[0];
+
+          // When the user clicks on <span> (x), close the modal
+          span8.onclick = function () {
+            modal8.style.display = "none";
+          };
+        </script>
+
+        <img
+          src="images/images/The Social Dilemma.webp"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Tony Robbins.png"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/JFK.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Schitt's Creek.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Pele.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/Downfall.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/The Great Hack.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/The Big Short.jpg"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+        <img
+          src="images/images/The Social Dilemma.webp"
+          alt=""
+          class="row_poster row_postersmall"
+        />
+      </div>
+    </div>
+
+    <script>
+      const nav = document.getElementById("nav");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY >= 100) {
+          nav.classList.add("nav_black");
+        } else {
+          nav.classList.remove("nav_black");
+        }
+      });
+    </script>
+  </body>
+</html>
